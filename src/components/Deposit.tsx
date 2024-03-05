@@ -1,11 +1,11 @@
 export default function Withdraw({ dispatch, isActive }) {
-  console.log('isActive is ', isActive);
+
   return (
     <button
       onClick={() => {
         dispatch({ type: "deposit" });
       }}
-      disabled={false}
+      disabled={!isActive}
     >
       Deposit 150
     </button>
